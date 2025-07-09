@@ -4,6 +4,35 @@ This is a full-stack blog application using **React (frontend)**, **Express (bac
 
 ---
 
+## 🚀 Cloning and Running Locally
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/arnab-1/full-stack-blog.git
+cd full-stack-blog
+
+# 2. Setup backend
+cd server
+npm install
+# Configure your .env file with MySQL credentials
+cp .env.example .env
+# Example .env values:
+# DB_HOST=localhost
+# DB_USER=root
+# DB_PASSWORD=yourpassword
+# DB_NAME=blogdb
+npm start
+
+# 3. Setup frontend
+cd ../client
+npm install
+npm start
+```
+
+Make sure you have MySQL running and a database named `blogdb` created before starting the server.
+
+---
+
 ## 🧭 Project Structure
 
 ```
